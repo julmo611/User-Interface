@@ -58,15 +58,23 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	/* font-family: 'Bangers', cursive; */
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
+
 
 /* Your code starts here! */
 
 body {
 	background-color: #f9f7f7 ;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
 }
 
 .container {
@@ -76,6 +84,13 @@ body {
 	padding: 20px;
 }
 
+.container-two {
+	width: 1024px;
+	margin: 0 auto 20px;;
+	background-color: white;
+	padding: 20px;
+	box-shadow: 0 2px 2px 0 #D6D6D6;
+}
 
 /* navigation */
 
@@ -110,9 +125,13 @@ body {
 
 .top-navigation nav ul li a {
 	text-decoration: none;
-	color: darkgray;
+	color: #636363;
 	padding: 10px 20px;
 	
+}
+
+.top-navigation nav ul li a:hover {
+	border-bottom: 2px solid #636363;
 }
 
 .top-navigation .logo {
@@ -164,6 +183,23 @@ header .half {
 	height: auto;
 }
 
+/* about header */
+
+.about-header {
+	background-image: url(../img/landscape.jpg);
+	background-position: bottom;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 450px;
+}
+
+.about-header h1 {
+	color: white;
+	font-size: 72px;
+	text-align: center;
+	padding-top: 200px;
+}
+
 /* end header */
 
 /* main */
@@ -177,7 +213,7 @@ main {
 
 .box-top {
 	display: inline-block;
-	width: 490px;
+	width: 485px;
 	margin: 0 auto;
 	padding: 10px;
 }
@@ -200,12 +236,54 @@ main {
 	padding: 10px;
 }
 
+
+/* about page */
+.box-top-about {
+	display: inline-block;
+	width: 485px;
+	margin: 0 auto;
+	padding: 0 30px 20px;
+	margin-bottom: 50px;
+	box-shadow: 0 2px 2px 0 #D6D6D6;
+}
+
+
+.box-top-about h2 {
+	background-color: #636363;
+	padding: 5px;
+	color: white;
+	text-align: center;
+}
+
+.box-top-about i {
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	margin: 0 auto;
+}
+
+.more-content {
+	margin-top: 50px;
+	text-align: center;
+	color: #636363;
+	font-size: 72px;
+}
+
+.more-content h2 {
+	font-size: 25px;
+}
+
+hr {
+	background: #636363;
+}
+
 /* end main */
 
 /* footer */
 
 footer {
 	margin-top: 50px;
+
 }
 
 footer address a {
@@ -219,5 +297,17 @@ footer address a {
 footer h6 {
 	text-align: center;
 }
+
+
+.footer-about {
+	text-align: center;
+	background-color: lightgray;
+	padding-top: 50px;
+} 
+
+.footer-about address {
+	margin-bottom: 50px;
+}
+
 
 /* end footer */
