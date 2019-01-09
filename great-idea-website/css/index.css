@@ -188,16 +188,21 @@ header .half {
 .about-header {
 	background-image: url(../img/landscape.jpg);
 	background-position: bottom;
-	background-size: cover;
-	background-attachment: fixed;
-	height: 450px;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 450px;
+    padding-top: 150px;
 }
 
 .about-header h1 {
 	color: white;
 	font-size: 72px;
-	text-align: center;
-	padding-top: 200px;
+    width: 600px;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+	background-color:rgba(255, 255, 255, 0.6);
+	border-bottom: 2px solid #636363;
 }
 
 /* end header */
@@ -236,6 +241,22 @@ main {
 	padding: 10px;
 }
 
+.box-bottom-about {
+	display: inline-block;
+	width: 325px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.box-bottom-about h2 {
+	text-align: center;
+}
+
+.box-bottom-about hr {
+	width: 50%;
+	margin-bottom: 20px;
+	left: 0;
+}
 
 /* about page */
 .box-top-about {
@@ -296,17 +317,18 @@ footer address a {
 
 footer h6 {
 	text-align: center;
+	margin-bottom: 50px;
 }
 
 
 .footer-about {
 	text-align: center;
 	background-color: lightgray;
-	padding-top: 50px;
+	padding: 50px 0;
 } 
 
 .footer-about address {
-	margin-bottom: 50px;
+	padding-bottom: 50px;
 }
 
 
