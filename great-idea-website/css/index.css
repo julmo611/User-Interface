@@ -72,6 +72,12 @@ body {
 	background-color: #f9f7f7 ;
 }
 
+.contact-body {
+	background-color: #f9f7f7 ;
+	background-image: url(../img/backg.png);
+	background-repeat: repeat;
+}
+
 p {
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
@@ -222,6 +228,31 @@ header {
 /* end header */
 
 
+/* contact header */
+
+.contact-header {
+	background-image: url(../img/businessman.jpg); /* fallback for older browsers */
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url(../img/businessman.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: bottom;
+    height: 500px;
+	padding-top: 150px;
+	width: 100%;
+}
+
+.contact-header h1 {
+	color:white;
+	font-size: 72px;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+	/* background-color:rgba(255, 255, 255, 0.6); */
+	
+}
+
+
 /* main */
 
 main {
@@ -354,6 +385,96 @@ hr {
 	cursor: pointer;
 }
 
+/* Contact page */
+
+.main-contact {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background: #00F260;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.box-contact {
+	width: 50%;
+	
+}
+
+.sm-logos {
+	text-align: center;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.sm-logos i {
+	color: white;
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+
+.sm-icons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.sm-icons i {
+	margin: 20px 5px;
+	transition: all .2s ease-in-out;
+	cursor: pointer;
+}
+
+.sm-icons i:hover {
+	transform: scale(1.5);
+}
+
+.box-contact a {
+	text-decoration: none;
+	color: white;
+}
+
+.box-contact form {
+	width: 100%;
+	padding: 20px;
+
+	
+}
+
+.box-contact form label {
+	width: 100%;
+	display: block;
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 18px;
+}
+
+.box-contact form input {
+	width: 100%;
+	display: block;
+	margin: 10px 0;
+	padding: 20px 10px;
+	border: 1px solid #636363;
+	font-size: 20px;
+}
+
+.box-contact form textarea {
+	width: 100%;
+	height: 250px;
+	display: block;
+	margin: 10px 0;
+	padding: 20px 10px;
+	border: 1px solid #636363;
+	font-size: 20px;
+}
+
+.form-button {
+	background-color: white;
+	border: 1px solid #636363;
+}
 
 /* end main */
 
@@ -391,10 +512,12 @@ footer h6 {
 
 .footer-services {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .footer-services section {
+	width: 50%;
 	padding-right: 30px; 
 }
 
@@ -408,6 +531,111 @@ footer h6 {
 	line-height: 2;
 }
 
+.footer-services aside {
+	width: 50%;
+}
 
+.footer-services aside img {
+	width: 100%;
+}
 
 /* end footer */
+
+
+@media all and (max-width: 600px) {
+
+/* navigation */
+
+.fixed-menu {
+	width: 100%;
+	height: auto;
+	position: inherit;
+}
+
+.top-navigation {
+	display: flex;
+    width: 100%;
+    height: auto;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
+
+.nav-bar {
+	flex-grow: 2;
+	align-self: center;
+	order: 2;
+}
+
+
+.top-navigation nav ul {
+	width: 100%;
+	display: block;
+	justify-content: space-evenly;
+}
+
+.top-navigation nav ul li {
+	text-align: center;
+	padding: 10px 10px;
+}
+
+.top-navigation nav ul li a {
+	text-decoration: none;
+	color: #636363;
+	font-size: 20px;
+	width: 100%;
+}
+
+.top-navigation nav ul li a:hover {
+	border-bottom: 2px solid #636363;
+}
+
+.top-navigation .top-logo {
+	width: 100%;
+	text-align: center;
+	margin: 5px auto;
+}
+
+.top-navigation .logo {
+	width: 100%;
+
+	order: 0;
+}
+
+/* end navigation */
+
+
+.container {
+	width: 100%;
+}
+
+.main-services .box-services {
+	width: 90%;
+}
+
+.contact-header h1 {
+	font-size: 25px;
+}
+
+.box-contact {
+	width: 100%;
+}
+
+
+
+.footer-services section {
+	max-width: 450px;
+	margin: 20px auto 50px;
+	width: 100%;
+
+}
+
+.footer-services aside {
+	width: 100%;
+
+}
+
+.footer-services aside img {
+	width: 100%;
+}
+
+}
